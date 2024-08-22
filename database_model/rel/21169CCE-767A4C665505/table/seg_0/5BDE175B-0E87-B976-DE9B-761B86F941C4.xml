@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5BDE175B-0E87-B976-DE9B-761B86F941C4" name="users">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:19:27 UTC</createdTime>
+<generatorID>70059363-9DAC-0C57-9DBB-C2E74514E606</generatorID>
+<ownerDesignName>database_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="50EBE0C8-7431-FDE0-9B23-28AAC24CCCDC">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:19:27 UTC</createdTime>
+<generatorID>300FB1B4-70EA-24B2-5BED-F31BA59D4132</generatorID>
+<ownerDesignName>database_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="D14E5CF5-4D17-B3C5-C28E-BDF48AE33DE4">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:19:27 UTC</createdTime>
+<generatorID>8AB0EC5E-3EE1-C5E2-F2B2-1EE6CF379A9E</generatorID>
+<ownerDesignName>database_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="password" id="67DEAE75-9105-9413-DD80-5F17B87BEE0B">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:19:27 UTC</createdTime>
+<generatorID>84540387-96DD-C563-041E-92055EC40833</generatorID>
+<ownerDesignName>database_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="46F98B07-6FBB-21B7-FD0C-66C20F5BD030" name="users_PK">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:19:27 UTC</createdTime>
+<generatorID>D9086480-F6AE-CBA2-C54F-A523899F8575</generatorID>
+<ownerDesignName>database_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50EBE0C8-7431-FDE0-9B23-28AAC24CCCDC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

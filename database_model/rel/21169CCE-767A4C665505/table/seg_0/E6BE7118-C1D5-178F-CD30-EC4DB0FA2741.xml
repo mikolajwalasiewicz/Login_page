@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E6BE7118-C1D5-178F-CD30-EC4DB0FA2741" name="emails">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:19:27 UTC</createdTime>
+<generatorID>DF210C5C-0FAB-7E3E-83C6-C0D9D779826F</generatorID>
+<ownerDesignName>database_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="98266767-55D9-F5F0-4686-959A498B2988">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:19:27 UTC</createdTime>
+<generatorID>0FCE3066-EDFC-6FC3-A0E3-1B57202B8733</generatorID>
+<ownerDesignName>database_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="04FD2D9F-E173-897C-E2F3-7275998B1A26">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:19:27 UTC</createdTime>
+<generatorID>52321E48-C249-A365-EF75-33DEC1B6928E</generatorID>
+<ownerDesignName>database_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="users_id" id="A2A1D888-6F7B-8A7E-A59C-F7E2A4F3BE71">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:19:27 UTC</createdTime>
+<generatorID>7896A66C-8B43-9CF6-9A08-453B47F03C7F</generatorID>
+<ownerDesignName>database_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="25C113CB-6C1A-7B4E-C4C9-428014CD063B" referredColumn="50EBE0C8-7431-FDE0-9B23-28AAC24CCCDC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6714FB1A-375D-5935-91FA-D9B9EAB7DFE8" name="emails__IDX">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:19:27 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>C33FE145-699C-A242-2FA3-A47759DD9263</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="A2A1D888-6F7B-8A7E-A59C-F7E2A4F3BE71"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="514FD368-9801-2D29-2551-746B4152A014" name="emails_users_FK">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:19:27 UTC</createdTime>
+<generatorID>C33FE145-699C-A242-2FA3-A47759DD9263</generatorID>
+<ownerDesignName>database_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A2A1D888-6F7B-8A7E-A59C-F7E2A4F3BE71"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

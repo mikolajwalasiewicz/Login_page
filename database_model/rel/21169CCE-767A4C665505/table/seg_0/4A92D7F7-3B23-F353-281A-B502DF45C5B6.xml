@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4A92D7F7-3B23-F353-281A-B502DF45C5B6" name="banned">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:19:27 UTC</createdTime>
+<generatorID>49CD8AB4-C568-9E94-5AC6-74D0E421094A</generatorID>
+<ownerDesignName>database_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="7912F35D-B35D-9D73-153A-88F3E0F34A3F">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:19:27 UTC</createdTime>
+<generatorID>54C3CA89-3CE7-0ADD-3216-7AE91B1639AB</generatorID>
+<ownerDesignName>database_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="isbanned" id="7D384B62-D205-F5FE-B079-9F7029110077">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:19:27 UTC</createdTime>
+<generatorID>21E1C7DE-498F-9012-38D0-6EAE177556BE</generatorID>
+<ownerDesignName>database_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="users_id" id="B6940193-7B1F-B32A-A93A-5770C59DCCE7">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:19:27 UTC</createdTime>
+<generatorID>A8E4AC6C-452C-2F6C-1426-1E0BD87E07E4</generatorID>
+<ownerDesignName>database_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FDE1D10A-0D72-2A3A-100E-143130FD01F6" referredColumn="50EBE0C8-7431-FDE0-9B23-28AAC24CCCDC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5C83CB80-3D1E-5257-D9A8-A0FA8F8F2702" name="banned__IDX">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:19:27 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>9A1EDAC6-CD68-3E7C-36B1-0609D1A745A1</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="B6940193-7B1F-B32A-A93A-5770C59DCCE7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0A3F50F4-4490-1B9F-4F46-03186032059D" name="banned_users_FK">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:19:27 UTC</createdTime>
+<generatorID>9A1EDAC6-CD68-3E7C-36B1-0609D1A745A1</generatorID>
+<ownerDesignName>database_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6940193-7B1F-B32A-A93A-5770C59DCCE7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

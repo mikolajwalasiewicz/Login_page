@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DF210C5C-0FAB-7E3E-83C6-C0D9D779826F" name="emails">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:16:32 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<engineerTo>
+<item key="21169CCE-593A-CB9D-A045-767A4C665505" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="0FCE3066-EDFC-6FC3-A0E3-1B57202B8733">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:16:46 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<engineerTo>
+<item key="21169CCE-593A-CB9D-A045-767A4C665505" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="52321E48-C249-A365-EF75-33DEC1B6928E">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:16:49 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<engineerTo>
+<item key="21169CCE-593A-CB9D-A045-767A4C665505" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="7896A66C-8B43-9CF6-9A08-453B47F03C7F">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:18:45 UTC</createdTime>
+<generatorID>C33FE145-699C-A242-2FA3-A47759DD9263</generatorID>
+<ownerDesignName>database_model</ownerDesignName>
+<engineerTo>
+<item key="21169CCE-593A-CB9D-A045-767A4C665505" value="true"/>
+</engineerTo>
+<referedAttribute>300FB1B4-70EA-24B2-5BED-F31BA59D4132</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

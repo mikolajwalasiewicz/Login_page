@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="70059363-9DAC-0C57-9DBB-C2E74514E606" name="users">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:06:14 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<engineerTo>
+<item key="21169CCE-593A-CB9D-A045-767A4C665505" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="300FB1B4-70EA-24B2-5BED-F31BA59D4132">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:06:46 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<engineerTo>
+<item key="21169CCE-593A-CB9D-A045-767A4C665505" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="8AB0EC5E-3EE1-C5E2-F2B2-1EE6CF379A9E">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:07:11 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<engineerTo>
+<item key="21169CCE-593A-CB9D-A045-767A4C665505" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="password" id="84540387-96DD-C563-041E-92055EC40833">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:07:46 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<engineerTo>
+<item key="21169CCE-593A-CB9D-A045-767A4C665505" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D9086480-F6AE-CBA2-C54F-A523899F8575" name="users PK">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:06:50 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<engineerTo>
+<item key="21169CCE-593A-CB9D-A045-767A4C665505" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>300FB1B4-70EA-24B2-5BED-F31BA59D4132</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

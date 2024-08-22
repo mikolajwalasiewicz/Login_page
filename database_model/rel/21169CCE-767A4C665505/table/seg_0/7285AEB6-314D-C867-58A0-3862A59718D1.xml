@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7285AEB6-314D-C867-58A0-3862A59718D1" name="phone">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:19:27 UTC</createdTime>
+<generatorID>E35AAB11-42F0-FFC1-8272-15AAB0CCD18B</generatorID>
+<ownerDesignName>database_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="7DA0CABE-58E3-94A4-D7B2-F7282C840965">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:19:27 UTC</createdTime>
+<generatorID>2A75D955-8DE2-6592-B4D3-2EA121FC778F</generatorID>
+<ownerDesignName>database_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="phone_number" id="14DF6A06-0F40-4F72-A3DA-EA7C80196493">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:19:27 UTC</createdTime>
+<generatorID>9CA541AB-6807-8F09-E355-32D053001E86</generatorID>
+<ownerDesignName>database_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="users_id" id="11CBA23E-36CC-CC44-E72C-E9B89C1A7D53">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:19:27 UTC</createdTime>
+<generatorID>05F14CC3-94FE-74EE-4F01-F7BCC97EB513</generatorID>
+<ownerDesignName>database_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2427D0C6-90CB-7547-5E24-C00A1F58BBA6" referredColumn="50EBE0C8-7431-FDE0-9B23-28AAC24CCCDC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4B428C16-FAC2-FF5C-0E26-2115374EAFBB" name="phone__IDX">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:19:27 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>9CDCA7E5-D4F7-2945-21A3-886D9650C4EB</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="11CBA23E-36CC-CC44-E72C-E9B89C1A7D53"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F9834E84-8C27-3238-602F-4DE3C734AFEC" name="phone_users_FK">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:19:27 UTC</createdTime>
+<generatorID>9CDCA7E5-D4F7-2945-21A3-886D9650C4EB</generatorID>
+<ownerDesignName>database_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11CBA23E-36CC-CC44-E72C-E9B89C1A7D53"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

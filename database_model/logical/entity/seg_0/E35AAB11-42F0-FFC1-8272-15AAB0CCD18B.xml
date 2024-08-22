@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E35AAB11-42F0-FFC1-8272-15AAB0CCD18B" name="phone">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:10:10 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<engineerTo>
+<item key="21169CCE-593A-CB9D-A045-767A4C665505" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="2A75D955-8DE2-6592-B4D3-2EA121FC778F">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:10:30 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<engineerTo>
+<item key="21169CCE-593A-CB9D-A045-767A4C665505" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="phone_number" id="9CA541AB-6807-8F09-E355-32D053001E86">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:10:46 UTC</createdTime>
+<ownerDesignName>database_model</ownerDesignName>
+<engineerTo>
+<item key="21169CCE-593A-CB9D-A045-767A4C665505" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="05F14CC3-94FE-74EE-4F01-F7BCC97EB513">
+<createdBy>mikol</createdBy>
+<createdTime>2024-08-22 20:18:30 UTC</createdTime>
+<generatorID>9CDCA7E5-D4F7-2945-21A3-886D9650C4EB</generatorID>
+<ownerDesignName>database_model</ownerDesignName>
+<engineerTo>
+<item key="21169CCE-593A-CB9D-A045-767A4C665505" value="true"/>
+</engineerTo>
+<referedAttribute>300FB1B4-70EA-24B2-5BED-F31BA59D4132</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

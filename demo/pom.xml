@@ -1,13 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.4.0-SNAPSHOT</version>
+        <version>3.3.0</version> <!-- Używaj stabilnej wersji -->
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -18,16 +16,14 @@
     <description>Demo project for Spring Boot</description>
 
     <properties>
-        <java.version>22</java.version>
+        <java.version>22</java.version> <!-- Użyj właściwej wersji Javy -->
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
         <start-class>com.example.demo.DemoApplication</start-class>
     </properties>
 
     <dependencies>
-        <!-- Core Spring Boot Dependencies -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
+        <!-- Spring Boot Dependencies -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -35,6 +31,10 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <!-- Database Driver -->
@@ -44,14 +44,7 @@
             <scope>runtime</scope>
         </dependency>
 
-        <!-- Lombok for reducing boilerplate code -->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
-        </dependency>
-
-        <!-- Test Dependencies -->
+        <!-- Testing Dependencies -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -62,13 +55,6 @@
             <artifactId>spring-security-test</artifactId>
             <scope>test</scope>
         </dependency>
-
-        <!-- JPA API -->
-        <dependency>
-            <groupId>javax.persistence</groupId>
-            <artifactId>javax.persistence-api</artifactId>
-            <version>2.2</version>
-        </dependency>
     </dependencies>
 
     <build>
@@ -76,14 +62,22 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.1.0</version>
                 <configuration>
-                    <mainClass>${start-class}</mainClass>
+                    <mainClass>com.example.demo.DemoApplication</mainClass> <!-- Zastąp ${start-class} nazwą rzeczywistej klasy -->
                 </configuration>
             </plugin>
         </plugins>
     </build>
 
+
     <repositories>
+        <!-- Spring Milestones -->
         <repository>
             <id>spring-milestones</id>
             <name>Spring Milestones</name>
@@ -92,6 +86,11 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
+        <repository>
+            <id>spring-releases</id>
+            <url>https://repo.spring.io/release</url>
+        </repository>
+        <!-- Spring Snapshots -->
         <repository>
             <id>spring-snapshots</id>
             <name>Spring Snapshots</name>
@@ -103,6 +102,7 @@
     </repositories>
 
     <pluginRepositories>
+        <!-- Plugin Repositories -->
         <pluginRepository>
             <id>spring-milestones</id>
             <name>Spring Milestones</name>
